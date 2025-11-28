@@ -1,0 +1,11 @@
+.DS_Store
+.vscode/
+.pio/
+**/.pio
+**/pio
+**/.ppm
+**/__pycache__
+/build
+/OUTPUT
+*.bin
+*.elf
