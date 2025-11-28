@@ -3,11 +3,13 @@
 An intelligent desk companion powered by an ESP32 and an HLK-LD2410 mmWave radar. This device acts as a "digital rear-view mirror" to protect your focus in open-plan offices or home setups.
 
 ## 🧐 The Problem
-Open-plan offices and home environments make us vulnerable to interruptions that shatter "flow states." Passive "busy" lights are often ignored. We need a system that actively warns the user *before* they are tapped on the shoulder.
+You're in a "flow state," completely focused on a complex coding problem, and a colleague or family member taps you on the shoulder. Your concentration is shattered.
+
+Open-plan offices and home-office setups make us vulnerable to these well-meaning but disruptive interruptions. A simple "busy" sign is easy to miss. This project creates an active visual warning that alerts you before you get startled, giving you a moment to pause your work and turn around.
 
 ## 💡 The Solution
 Unlike standard PIR sensors that just detect motion, this mmWave radar project uses **Range Gating** logic:
-1.  **Ignores You:** It creates a "User Zone" (0-1.5m) where your movements are ignored.
+1.  **Smart User Zone:**  It creates a dedicated "User Zone" (0-1.5m) where your presence is monitored for focus (turning Green), distinguishing you from the rest of the room.
 2.  **Detects Intruders:** It scans a "Distraction Zone" (1.5m-3m) behind you.
 3.  **Active Warning:** If someone breaches the perimeter, the LED ring flashes a visual alert, giving you time to turn around before being startled.
 4.  **Break Timer:** Includes a "52/17" rule timer to remind you to take breaks after 52 minutes of deep work.
