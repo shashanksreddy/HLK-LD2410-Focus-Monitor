@@ -34,6 +34,7 @@ Unlike standard PIR sensors that just detect motion, this mmWave radar project u
 | GND | GND | |
 | Data In (DI) | GPIO 23 | |
 
+```mermaid
 graph TD
     %% Components
     ESP32[ESP32 Development Board]
@@ -42,25 +43,26 @@ graph TD
     Power[5V Power Source / USB]
 
     %% Wiring Connections - Radar to ESP32
-    Radar -- VCC --> Power
-    Radar -- GND --> Power
-    Radar -- TX --> ESP32_RX[GPIO 16 (RX2)]
-    Radar -- RX --> ESP32_TX[GPIO 17 (TX2)]
+    Radar -- "VCC" --> Power
+    Radar -- "GND" --> Power
+    Radar -- "TX" --> ESP32_RX["GPIO 16 (RX2)"]
+    Radar -- "RX" --> ESP32_TX["GPIO 17 (TX2)"]
     
     %% Wiring Connections - LED Ring to ESP32
-    LEDRing -- VCC (5V) --> Power
-    LEDRing -- GND --> Power
-    LEDRing -- DI (Data In) --> ESP32_D23[GPIO 23]
+    LEDRing -- "VCC (5V)" --> Power
+    LEDRing -- "GND" --> Power
+    LEDRing -- "DI (Data In)" --> ESP32_D23["GPIO 23"]
 
     %% Power distribution
-    Power -- 5V --> ESP32
-    Power -- GND --> ESP32
+    Power -- "5V" --> ESP32
+    Power -- "GND" --> ESP32
 
     %% Styling
     style ESP32 fill:#232F3E,stroke:#fff,stroke-width:2px,color:#fff
     style Radar fill:#009900,stroke:#333,stroke-width:2px,color:#fff
     style LEDRing fill:#ffcc00,stroke:#333,stroke-width:2px,color:#000
     style Power fill:#cc0000,stroke:#333,stroke-width:2px,color:#fff
+```
 
 **Note:** The LED ring and sensor can draw significant power. Ensure your 5V source is stable.
 
