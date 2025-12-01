@@ -1,6 +1,6 @@
 # Focus-Distraction Detector (Deep Work Guardian)
 
-An intelligent desk companion powered by an ESP32 and an HLK-LD2410 mmWave radar. This device acts as a "digital rear-view mirror" to protect your focus in open-plan offices or home setups.
+A smart mmWave radar monitor that helps you stay focused and take regular breaks. Built with an ESP32, HLK-LD2410B sensor, and a WS2812 LED ring.
 
 ## 🧐 The Problem
 You're in a "flow state," completely focused on a complex coding problem, and a colleague or family member taps you on the shoulder. Your concentration is shattered.
