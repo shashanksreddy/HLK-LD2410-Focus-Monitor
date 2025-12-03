@@ -1,6 +1,6 @@
-# Focus-Distraction Detector (Deep Work Guardian)
+# Focus-Distraction Detector 
 
-An intelligent desk companion powered by an ESP32 and an HLK-LD2410 mmWave radar. This device acts as a "digital rear-view mirror" to protect your focus in open-plan offices or home setups.
+A smart mmWave radar monitor that helps you stay focused and take regular breaks. Built with an ESP32, HLK-LD2410B sensor, and a WS2812 LED ring.
 
 ## 🧐 The Problem
 You're in a "flow state," completely focused on a complex coding problem, and a colleague or family member taps you on the shoulder. Your concentration is shattered.
@@ -23,23 +23,23 @@ Unlike standard PIR sensors that just detect motion, this mmWave radar project u
 
 ## 🔌 Wiring
 
-| HLK-LD2410 Pin | ESP32 Pin | Note |
-| :--- | :--- | :--- |
-| VCC | 5V | |
-| GND | GND | |
-| TX | GPIO 16 (RX2) | |
-| RX | GPIO 17 (TX2) | |
+| HLK-LD2410 Pin | ESP32 Pin |
+| :--- | :--- |
+| VCC | 5V | 
+| GND | GND | 
+| TX | GPIO 16 (RX2) | 
+| RX | GPIO 17 (TX2) | 
 
-| LED Ring Pin | ESP32 Pin | Note |
-| :--- | :--- | :--- |
-| VCC | 5V | |
-| GND | GND | |
+| LED Ring Pin | ESP32 Pin |
+| :--- | :--- | 
+| VCC | 5V | 
+| GND | GND | 
+| Data In (DI) | GPIO 23 | 
 
 <div align="center">
   <img src="images/circuit.jpg" alt="XL9535 Relay Module Series Variants" width="600">
   <p><em>Figure 1: The XL9535 Relay Module family (Illustrative 16-channel version shown).</em></p>
 </div>
-| Data In (DI) | GPIO 23 | |
 
 ```mermaid
 graph TD
