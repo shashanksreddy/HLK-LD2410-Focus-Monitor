@@ -38,7 +38,7 @@ Unlike standard PIR sensors that just detect motion, this mmWave radar project u
 
 <div align="center">
   <img src="images/circuit.jpg" alt="XL9535 Relay Module Series Variants" width="600">
-  <p><em>Figure 1: The XL9535 Relay Module family (Illustrative 16-channel version shown).</em></p>
+  <p><em>Figure1.</em></p>
 </div>
 
 ```mermaid
