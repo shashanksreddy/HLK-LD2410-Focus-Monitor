@@ -1,4 +1,4 @@
-# Focus-Distraction Detector (Deep Work Guardian)
+# Focus-Distraction Detector 
 
 A smart mmWave radar monitor that helps you stay focused and take regular breaks. Built with an ESP32, HLK-LD2410B sensor, and a WS2812 LED ring.
 
@@ -23,18 +23,18 @@ Unlike standard PIR sensors that just detect motion, this mmWave radar project u
 
 ## 🔌 Wiring
 
-| HLK-LD2410 Pin | ESP32 Pin | Note |
-| :--- | :--- | :--- |
-| VCC | 5V | |
-| GND | GND | |
-| TX | GPIO 16 (RX2) | |
-| RX | GPIO 17 (TX2) | |
+| HLK-LD2410 Pin | ESP32 Pin |
+| :--- | :--- |
+| VCC | 5V | 
+| GND | GND | 
+| TX | GPIO 16 (RX2) | 
+| RX | GPIO 17 (TX2) | 
 
-| LED Ring Pin | ESP32 Pin | Note |
-| :--- | :--- | :--- |
-| VCC | 5V | |
-| GND | GND | |
-| Data In (DI) | GPIO 23 | |
+| LED Ring Pin | ESP32 Pin |
+| :--- | :--- | 
+| VCC | 5V | 
+| GND | GND | 
+| Data In (DI) | GPIO 23 | 
 
 ```mermaid
 graph TD
